@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "e5cd0654-d13e-4d3b-bb60-acf777a61c4c"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -35,7 +38,11 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ag-grid-community/styles/ag-grid.css",
+              "node_modules/ag-grid-community/styles/ag-theme-alpine.css"
+            
             ],
             "scripts": [],
             "vendorChunk": true,

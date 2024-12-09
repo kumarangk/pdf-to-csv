@@ -12,14 +12,34 @@
       <button (click)="save()" [disabled]="csvText === ''">Save</button>
     </div>
 
-    <ng-container *ngIf="csvText !== ''">
+    <!-- <ng-container *ngIf="csvText !== ''">
       <label>Raw CSV</label>
       <textarea [rows]="textAreaRows">{{csvText}}</textarea>
-    </ng-container>
+    </ng-container> -->
 
     <div style="display: flex; justify-content: center; color: gray;">
       <h4>Developed by Augusto Fontana</h4>
     </div>
     
   </div>
+
+  <div class="container mt-4">
+    
+    <!-- <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th *ngFor="let data of header">{{data}}</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of txnData">
+        <ng-container *ngFor="let txn of record">
+          <td style="background-color: #f2f2f2; color: #333; padding: 15px; text-align: center;">{{txn}}</td>
+      </ng-container>
+      </tr>
+    </tbody>
+    </table> -->
+  </div>
+
 </div>
+<app-dynamic-ag-grid [header]="hdata" [data]="tdata"></app-dynamic-ag-grid>

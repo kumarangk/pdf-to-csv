@@ -1,0 +1,29 @@
+/* dynamic-ag-grid.component.css */
+
+/* Overall component styling */
+.ag-grid-container {
+    width: 100%; /* Adjust width as needed */
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  /* Customizing Ag-Grid's default theme */
+  .ag-theme-alpine {
+    /* Override default styles here */
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Styling specific elements within the Ag-Grid */
+  .ag-header-cell {
+    background-color: #f0f0f0;
+    font-weight: bold;
+  }
+  
+  .ag-cell {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .ag-row-selected {
+    background-color: #f2f2f2;
+  }

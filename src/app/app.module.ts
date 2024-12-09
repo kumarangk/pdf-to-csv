@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DynamicAgGridComponent } from './dynamic-ag-grid/dynamic-ag-grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DynamicAgGridComponent
   ],
   imports: [
     BrowserModule,

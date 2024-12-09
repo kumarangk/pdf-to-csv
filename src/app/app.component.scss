@@ -38,3 +38,16 @@ div {
     text-align: center;
     width: 105px;
 }
+
+.table td {
+    /* Add desired styles here */
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark text color */
+    padding: 15px; /* Add padding */
+    text-align: center; /* Center align text */
+}
+
+.table td:hover {
+    background-color: #ddd; /* Change background on hover */
+    cursor: pointer; /* Change cursor on hover to indicate interactivity */
+}
